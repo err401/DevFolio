@@ -1,11 +1,34 @@
-import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
+import { HeaderMin } from '../components/HeaderMin/HeaderMin';
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      {/* Home | Blog | Projects |  GuestBook | Dashboard */}
+      <HeaderMin links={
+        [
+          {
+            link: '',
+            label: 'Home',
+          },
+          {
+            link: '',
+            label: 'Blog',
+          },
+          {
+            link: '',
+            label: 'Projects',
+          },
+          {
+            link: '',
+            label: 'Guestbook',
+          },
+          {
+            link: '',
+            label: 'Dashboard',
+          },
+        ]
+      }
+      />
     </>
   );
 }
